@@ -1,3 +1,15 @@
-.btn-indigo {
-  @apply py-2 px-4 bg-indigo-500 text-white font-semibold rounded-lg shadow-md hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-400 focus:ring-opacity-75;
+.Modal {
+  position: absolute;
+  @apply bg-white rounded-lg overflow-hidden shadow-xl sm:my-8 sm:align-middle sm:max-w-lg sm:w-full;
+}
+
+.pac-container {
+  color: #d9d9d9;
+  height: 6rem;
+}
+
+.pac-item {
+  height: 2rem;
+  font-size: 12px;
+  color: #d9d9d9;
 }

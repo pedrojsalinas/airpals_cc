@@ -52,8 +52,8 @@ function AddressSearchPage() {
       <main className="bg-white max-w-lg mx-auto p-8 md:p-12 my-10 rounded-lg shadow-2xl">
         <section className="text-center">
           <h3 className="font-bold text-2xl">Where are you located?</h3>
-          <p className="pt-2">So we know where to drop off the stuff</p>
-          <span className="text-gray-600">We won't share your address <br /> with your ex (or whoever).</span>
+          <p className="pt-2 pb-3 font-semibold">So we know where to drop off the stuff</p>
+          <span className="text-gray-500 font-normal">We won't share your address <br /> with your ex (or whoever).</span>
         </section>
         <section className="mt-10">
           <div className="flex flex-col">
@@ -83,7 +83,7 @@ function AddressSearchPage() {
         isOpen={modalIsOpen}
         onRequestClose={closeModal}
         style={customStyles}
-        contentLabel="Example Modal"
+        className="Modal"
       >
         <div className="modal-close absolute top-0 right-0 cursor-pointer flex flex-col items-center mt-4 mr-4 text-sm z-50">
           <svg onClick={closeModal} className="fill-current text-black" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
@@ -94,7 +94,7 @@ function AddressSearchPage() {
           <div className="text-center p-5">
             <h2 className="text-2xl font-bold">{modalTitle}</h2>
             <div className="pt-4">
-              <span className="">{modalSubtitle}</span>
+              <span className="font-semibold">{modalSubtitle}</span>
             </div>
             <div className="pt-2">
               <p className="text-base">{modalText}</p>
@@ -105,7 +105,7 @@ function AddressSearchPage() {
 
           </div>
           <div className="h-20"></div>
-          <div className="text-center">
+          <div className="text-center pb-5">
             <button onClick={closeModal} className="w-60 bg-pink-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">UNDERSTOOD</button>
           </div>
         </div>
