@@ -1,12 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import Modal from 'react-modal';
+import AddressSearchPage from './pages/addressSearchPage/AddressSearchPage';
 import reportWebVitals from './reportWebVitals';
-
+Modal.setAppElement('#root');
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <AddressSearchPage />
   </React.StrictMode>,
   document.getElementById('root')
 );
